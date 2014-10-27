@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript">
+            var socket = io.connect();
+                var session_id = null;
+                var name = prompt("What is your name?");
+
+            if(name){
+                socket.emit('new_user', {user_name: name})
+            }
+
+            socket.on('info', function(msg){
+             console.log('received info event and got the following message', msg);
+            });
+            socket.emit('test', { hello: 'world' });
+        </script>
+    </head>
+    <body>
+        <h1>User Index Page</h1>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "name": "kira_mean",
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "ejs": "^1.0.0",
+    "express": "^3.4.8",
+    "externalip": "0.0.1",
+    "is-bot": "0.0.1",
+    "mongoose": "^3.8.18",
+    "mongoose-unique-validator": "^0.4.1",
+    "request": "^2.47.0",
+    "socket.io": "^1.1.0"
+  },
+  "description": "anonymous diaries",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kira-io/kira_mean.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kira-io/kira_mean/issues"
+  },
+  "homepage": "https://github.com/kira-io/kira_mean"
+}
