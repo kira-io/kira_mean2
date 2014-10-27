@@ -173,7 +173,7 @@ app.get('/online', function (req, res) {
 });
 
 
-var server = app.listen(7777);
+var server = app.listen(process.env.PORT || 7777);
 var io = require('socket.io').listen(server); // this tells socket.io to use our express server
 require('./config/routes')(app, io);
 console.log("Express server listening on port 7777");
