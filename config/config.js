@@ -13,21 +13,7 @@ var path = require('path')
     }
 
 module.exports = {
-    development: {
-        db: 'mongodb://localhost/test',
-        oot: rootPath,
-        notifier: notifier,
-        app: {
-            name: 'Nodejs Express Mongoose Demo'
-        }
-    },
-    test: {
-        db: 'mongodb://localhost/noobjs_test',
-        root: rootPath,
-        notifier: notifier,
-        app: {
-            name: 'Nodejs Express Mongoose Demo'
-        }
-    },
+    development: {},
+    test: {},
     production: {}
 }
