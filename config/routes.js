@@ -1,4 +1,4 @@
-var users = require('./../server/controllers/users.js');
+// var users = require('./../server/controllers/users.js');
 // var user_session_id = null;
 // var users_data = {};
 // var answers = [];

@@ -1,7 +1,7 @@
 var express = require('express')
   , path = require('path')
   , app = express()
-  , config = require('./config/mongoose')
+//  , config = require('./config/mongoose')
   , request = require('request')
   , isbot = require('is-bot')
   , externalip = require('externalip');
