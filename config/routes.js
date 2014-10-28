@@ -7,10 +7,6 @@
 
 module.exports = function Routes(app, io){
 
-    io.configure(function(){
-      io.set("transports", ["xhr-polling"]);
-      io.set("polling duration", 10);
-    }):
     io.sockets.on('connection', function(socket) {
       socket.on('in_all_posts', function(data){
         console.log('IN ALL POSTS', socket.rooms);
